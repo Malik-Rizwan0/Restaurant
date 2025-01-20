@@ -1,0 +1,121 @@
+*:not(i){
+    font-family: "Roboto", serif !important;
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --secondColor:  #2A435D;
+    --red:#CC3333;
+}
+.nav-red{
+    background-color: var(--red);
+    padding: 10px 5px;  
+}
+.nav-red div{
+    color: #fff;
+}
+p , li{
+    margin-bottom: 0px !important;
+    font-size: 20px;
+    color: var(--secondColor);
+}
+nav ul li{
+    list-style-type:none ;
+}
+nav ul li a{
+    text-decoration: none;
+    color: var(--secondColor);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+nav .shopping-icon{
+    height: 55px;
+    width: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondColor);
+    color: #fff;
+    border-radius: 50%;
+    position: relative;
+    left: 30px;
+}
+.btn-main{
+    background-color: var(--red);
+    padding: 5px 10px;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+} 
+
+.red{
+    color: var(--red);
+}
+.hero h2{
+    font-size: 45px;
+}
+.btn-order{
+    font-size: 24px;
+    font-weight: 600;
+}
+.hero-icons i{
+    color: var(--red);
+    padding: 10px;
+    font-size: 35px !important;
+}
+h3{
+    font-size: 35px !important;
+    font-weight: 700 !important;
+}
+.cards-popular{
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px; 
+}
+img{
+    border-radius: 10px;
+
+}
+.cards-popular img{
+    height: 120px !important ;
+    object-fit: cover;
+    object-position: center;
+}
+ul{
+    padding: 0px 0px !important;
+}
+.highest li{
+    list-style-type: none;
+    padding: 10px 0px ;
+}
+.highest li:before {
+    font-family: "Font Awesome 6 Free"; /* Use Font Awesome */
+    content: "\2B50 "; /* Unicode for fa-certificate */
+    font-weight: 900; /* Required for solid icons */
+    color: var(--red);
+    margin-right: 10px; /* Space between icon and text */
+  }
+  .cards-offer{
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    /* grid-template-columns: repeat(3, 1fr); */
+    gap: 16px; 
+}
+.cards-offer img{
+    width: 100%;
+    object-fit: cover;
+}
+.cards-offer div:nth-child(1) img{
+    object-position: right;
+
+}
+.cards-offer div:nth-child(2) img{
+    object-position: right;
+}
+.cards-offer div:nth-child(3) img{
+    object-position: left;
+
+}
