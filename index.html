@@ -25,11 +25,15 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
+
+
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 </head>
 
 <body>
     <header class="">
-        <nav class="nav-red">
+        <nav class="nav-red d-none d-md-block">
             <div class="container-fluid container-lg d-flex justify-content-between">
                 <div class=" d-flex ">
                     <div class="pe-5">
@@ -49,11 +53,11 @@
 
         </nav>
         <nav class="main container-fluid container-lg">
-            <div class="row py-3 d-flex justify-content-between align-items-center">
-                <div class="col-2">
+            <div class="row py-3 px-3 px-lg-0 d-flex justify-content-between align-items-center">
+                <div class="col-4 col-md-2">
                     <img src="img/logo.png" height="59px" alt="logo">
                 </div>
-                <div class="col-10 p-0">
+                <div class="col-10 p-0 d-none d-md-block">
                     <ul class="d-flex justify-content-between align-items-center p-0">
                         <li>
                             <a href="#">HOME</a>
@@ -88,26 +92,39 @@
                         </li>
                     </ul>
                 </div>
+                <div class="col-2 text-end d-block d-md-none">
+                    <i class="fa-solid fa-bars fa-2xl" style="color: #cc3333;" id="show"></i>
+                <i class="fa-solid fa-x fa-2xl" style="color: #cc3333;" id="hide"></i>
+                </div>
+            </div>
+            <div class="mobile-nav  text-start" id="mobileNav">
+                <div class="links d-flex flex-column">
+                    <a href="#" class="active">HOME</a>
+                    <a href="#Catagories">ABOUT</a>
+                    <a href="#Menu">PAGES</a>
+                    <a href="#Service">CONTACT</a>
+                    
+                </div>
             </div>
         </nav>
     </header>
     <!-- hero Section  -->
     <section class="hero container-fluid container-lg">
         <div class="row">
-            <div class="col-7 d-flex align-items-center flex-column justify-content-around">
+            <div class="col-md-6 col-lg-7 d-flex align-items-center flex-column justify-content-around">
                 <div class="fst-italic">
 
                     <p class="red fst-italic">
                         Best In Town
                     </p>
                     <h2 class="fst-italic">
-                        ENJOY OUR CHICKEN 
+                        ENJOY OUR CHICKEN
                         <br>
                         <span class="red">BURGER</span> FAST FOOD
                     </h2>
                 </div>
                 <p class="w-100 text-end">
-                       <button class="btn-main btn-order"> Order Now </button> &nbsp; &nbsp; Price : $10.50
+                    <button class="btn-main btn-order"> Order Now </button> &nbsp; &nbsp; Price : $10.50
                 </p>
                 <div class="w-100 hero-icons">
                     <i class="fa-brands fa-x-twitter fa-xl"></i>
@@ -116,15 +133,15 @@
                     <i class="fa-brands fa-linkedin-in fa-xl"></i>
                 </div>
             </div>
-            <div class="col-5">
+            <div class="col-md-6 col-lg-5 d-flex align-items-center">
                 <img src="img/hero.png" width="100%" alt="Chicken">
             </div>
         </div>
     </section>
 
     <!-- Popular  -->
-     <section class="popular container-fluid container-lg text-center py-3 py-md-5">
-        <p>Food Items</p>
+    <section class="popular container-fluid container-lg text-center py-3 py-md-5">
+        <p><b> Food Items </b></p>
         <h3 class="red">
             Popular Dishes
         </h3>
@@ -135,21 +152,25 @@
             <div><img src="img/popular4.png" width="100%" alt=""></div>
             <div><img src="img/popular5.png" width="100%" alt=""></div>
         </div>
-     </section>
+    </section>
 
-     <!-- highest-Quality  -->
+    <!-- highest-Quality  -->
 
-     <section class="highest container-fluid container-lg py-3 py-md-5">
-        <p class="text-center ">RICH & HEALTHY</p>
+    <section class="highest container-fluid container-lg py-3 py-md-5">
+        <p class="text-center "><b> RICH & HEALTHY </b></p>
         <div class="row">
-            <div class="col-4">
+            <div class="col-12 col-md-4 d-flex justify-content-center">
                 <img src="img/highest1.png" width="100%" alt="">
             </div>
-            <div class="col-8">
-                <h3 class="red">Highest quality artisangrains, <br> proteins & seasonal ingredients</h3>
-                <p class="pe-5">Righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desires, that they cannot foresee.</p>
+            <div class="col-12 col-md-8 highestContent pt-3 p-md-0">
+                <div>
+                    <h3 class="red">Highest quality artisangrains, <br> proteins & seasonal ingredients</h3>
+                    <p class=" pe-md-5">Righteous indignation and dislike men who are so beguiled and demoralized by the
+                        charms
+                        of pleasure of the moment, so blinded by desires, that they cannot foresee.</p>
+                </div>
                 <div class="row">
-                    <div class="col-7 d-flex flex-column align-items-center justify-content-around">
+                    <div class="col-12 col-md-7 d-flex flex-column align-items-center justify-content-around">
                         <ul>
                             <li>Simple and easy to distinguish</li>
                             <li>Pleasure of the momentblinded desire</li>
@@ -161,14 +182,14 @@
                             </button>
                         </div>
                     </div>
-                    <div class="col-5">
-                        <img src="img/highest2.png" width="100%" height="350px" alt="">
+                    <div class="col-12 col-md-5 pt-3 p-md-0 d-flex align-items-center">
+                        <img src="img/highest2.png" class="highestImg2" width="100%" height="350px" alt="">
                     </div>
                 </div>
             </div>
         </div>
-     </section>
-     <section class="offer py-3 py-md-3">
+    </section>
+    <section class="offer py-3 py-md-3">
         <div class="container-fluid text-center">
             <h3 class="red"> <i>Big Offer</i></h3>
             <p>For in this week, take your food, buy your best one.</p>
@@ -178,24 +199,487 @@
                 <div><img src="img/offer3.png" height="200px" alt=""></div>
             </div>
         </div>
-     </section>     
-     <!-- SPECIALS -->
-      <section class="specials container-fluid py-3 py-md-5">
+    </section>
+    <!-- SPECIALS -->
+    <section class="specials container-fluid py-3 py-md-5">
         <div class="text-center">
-            <p class="red">SPECIALS</p>
+            <p class="red">
+                <b>
+                    SPECIALS
+                </b>
+            </p>
             <h3>Check out our menu</h3>
             <p>Demoralized by the charms of pleasure of the moment so blinded except to some advantage.</p>
         </div>
         <div class="container-lg">
-            <div class="row d-flex align-items-center justify-content-between">
-                <div>BREAKFAST</div>
-                <div>LUNCH</div>
-                <div>DINNER</div>
-                <div>STARTERS</div>
-                <div>BEVERAGAS</div>
+            <div class="d-flex align-items-center justify-content-around specials-list-btns   ">
+                <div><button class="active">BREAKFAST</button></div>
+                <div><button>LUNCH</button></div>
+                <div><button>DINNER</button></div>
+                <div><button>STARTERS</button></div>
+                <div><button>BEVERAGAS</button></div>
+            </div>
+            <div class="row p-md-3  d-flex align-items-center ">
+                <div class="col-12 col-md-5 d-flex align-item-center flex-column pt-2 pt-md-0">
+                    <img src="img/specials.png" class="rounded-0 w-100" alt="">
+                    <button class="btn-main w-100 rounded-0 py-2 d-flex align-items-center justify-content-around">VIEW
+                        ALL MENU &nbsp; &nbsp; &nbsp; <i class="fa-regular fa-circle-right fa-xl"
+                            style="color: #ffffff; float: right; "></i></button>
+                </div>
+                <div class="col-12 col-md-7">
+                    <div class="specials-dish">
+                        <div class="red">Gazpacho Garlic</div>
+                        <p>
+                            Chilled tomato, cucumber, garlic, red pepper soup.
+                        </p>
+                    </div>
+                    <div class="specials-dish">
+                        <div class="red">Pan Con Berenjina Frita
+                        </div>
+                        <p>
+                            Marinated seabass with sour sauce, dill & coriander on bread.
+                        </p>
+                    </div>
+                    <div class="specials-dish">
+                        <div class="red">New Lubina Marinada</div>
+                        <p>
+                            Fried aubergine with almond on bread (2 pieces).
+                        </p>
+                    </div>
+                    <div class="specials-dish">
+                        <div class="red">Gazpacho </div>
+                        <p>
+                            Atlantic cod fillet, chips, salad, tartare, lemon.
+                        </p>
+                    </div>
+                    <div class="specials-dish">
+                        <div class="red">Coconut Chia Bowl</div>
+                        <p>
+                            Marinated seabass with sour saucel & coriander on bread.
+                        </p>
+                    </div>
+                    <div class="specials-dish">
+                        <div class="red">New Lubina Marinada</div>
+                        <p>
+                            New Lubina Marinada
+                        </p>
+                    </div>
+                    <div class="specials-dish">
+                        <div class="red">Gazpacho Garlic</div>
+                        <p>
+                            Chilled tomato, cucumber, garlic, red pepper soup.
+                        </p>
+                    </div>
+
+                </div>
             </div>
         </div>
-      </section>
+    </section>
+    <section class="allTime container-fluid py-3 py-md-5 container-lg text-center">
+        <h3 class="red">
+            SPECIALS MANU FOR ALL TIME
+        </h3>
+        <div class="d-flex">
+            <div class="allTime-card">
+                <img src="img/allTime1.png" width="70%" alt="">
+                <p>Burger</p>
+            </div>
+            <div class="allTime-card">
+                <img src="img/allTime2.png" width="70%" alt="">
+                <p>Fried chicken</p>
+            </div>
+            <div class="allTime-card">
+                <img src="img/allTime3.png" width="70%" alt="">
+                <p>Doner with
+                    Grilled Chicken</p>
+            </div>
+            <div class="allTime-card">
+                <img src="img/allTime4.png" width="70%" alt="">
+                <p>Pizza</p>
+            </div>
+            <div class="allTime-card">
+                <img src="img/allTime5.png" width="70%" alt="">
+                <p>Hot Dogs</p>
+            </div>
+            <div class="allTime-card">
+                <img src="img/allTime7.png" width="70%" alt="">
+                <p>Chicken
+                    Skewers</p>
+            </div>
+            <div class="allTime-card">
+                <img src="img/allTime8.png" width="70%" alt="">
+                <p>Greek Salad</p>
+            </div>
+            <div class="allTime-card">
+                <img src="img/allTime9.png" width="70%" alt="">
+                <p>Dahi Puri</p>
+            </div>
+            <div class="allTime-card">
+                <img src="img/allTime10.png" width="70%" alt="">
+                <p>Ice cream with
+                    Chocolate</p>
+            </div>
+            <div class="allTime-card">
+                <img src="img/allTime11.png" width="70%" alt="">
+                <p>Cocktail
+                    Glasses</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="ourRestaurant container-fluid py-3 py-md-5 container-lg">
+        <div class="row d-flex align-items-center">
+            <div class="col-md-5">
+                <div class="row ">
+                    <div class="col-6 p-1">
+                        <img src="img/ourRestaurant1.png" class="rounded-0" width="100%" alt="">
+                    </div>
+                    <div class="col-6 p-1 ">
+                        <img src="img/ourRestaurant2.png" class="rounded-0" width="100%" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <img src="img/ourRestaurant3.png" class="rounded-0" width="100%" alt="">
+                </div>
+            </div>
+            <div class=" col-md-7">
+                <p class="red">
+                    <b>
+                        OUR RESTAURANT
+                    </b>
+                </p>
+                <h3>
+                    For every specialoccasion there’s heritaste
+                </h3>
+                <p>
+                    Indignation and dislike men who are so beguiled demoralized by the charms of pleasure of the moment.
+                    Success Story.
+                </p>
+                <div>
+                    <div class=" d-flex py-1">
+                        <div class="icon">
+                            <img src="img/ourRestaurant4.png" width="50px" alt="">
+                        </div>
+                        <div class="w-100">
+                            <h5 class="red">Success Story</h5>
+                            <p>Certain circumstances and owing to the claims of duty obligations of business it will
+                                frequently.</p>
+                            <button> Read More &nbsp; <i class="fa-regular fa-circle-right"></i></button>
+                        </div>
+                    </div>
+                    <div class=" d-flex py-1">
+                        <div class="icon">
+                            <img src="img/ourRestaurant4.png" width="50px" alt="">
+                        </div>
+                        <div class="w-100">
+                            <h5 class="red">Success Story</h5>
+                            <p>Certain circumstances and owing to the claims of duty obligations of business it will
+                                frequently.</p>
+                            <button> Read More &nbsp; <i class="fa-regular fa-circle-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="delivery container-fluid container-lg py-3 py-lg-5 ">
+        <div class="row">
+
+            <div class="col-12 col-md-7">
+                <p class="red text-center"> <b>Delivery </b>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </p>
+                <h3>
+                    A Moments Of
+                    <br>
+                    <span class="red">
+                        Delivered On Right Time & Place
+                    </span>
+
+                </h3>
+                <p>
+                    Food Khan is a restaurant, bar and coffee roastery located on a busy corner site in Farringdon's
+                    Exmouth Market. With glazed frontage on two sides of the building, overlooking the market and a
+                    bustling London inteon.
+                </p>
+
+                <div class="order d-flex align-items-center justify-content-evenly py-3">
+                    <div class="deliveryNum d-flex ">
+                        <div class="text-center px-2"><b>Delivery Order</b> <br>+880 1630 225 015</div>
+                        <div> <img src="img/header-bike.png" width="40px" alt=""></div>
+                    </div>
+                    <div>
+                        <button class="btn-main ">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-5 d-flex align-items-center">
+                <img src="img/delivery.png" width="100%" alt="">
+            </div>
+        </div>
+    </section>
+
+
+    <section class="best container-fluid container-lg py-3 py-md-5">
+        <p class="red text-center pb-3"><b>Why We are the best</b></p>
+        <div class="row">
+            <div class="col-12 col-md-4">
+                <div class="cardBest text-center">
+                    <div class="cardImg py-3 d-flex align-items-end justify-content-center">
+                        <img src="img/best1.png" width="80px" height="80px" alt="">
+                    </div>
+                    <div class="cardDesc">
+                        <p><b>Passionate Chefs</b></p>
+                        <p class="text-start py-3">Beguiled and demoralized by all get charms pleasure the moments ever
+                            so blinded by desire.</p>
+                    </div>
+                    <div class="w-75 text-end">
+                        <button class="btn-main "> Read More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="cardBest text-center">
+                    <div class="cardImg py-3 d-flex align-items-end justify-content-center">
+                        <img src="img/best2.png" width="80px" height="80px" alt="">
+                    </div>
+                    <div class="cardDesc">
+                        <p><b>100 % Fresh Foods</b></p>
+                        <p class="text-start py-3">Beguiled and demoralized by all get charms pleasure the moments ever
+                            so blinded by desire.</p>
+                    </div>
+                    <div class="w-75 text-end">
+                        <button class=""> Read More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="cardBest text-center">
+                    <div class="cardImg py-3 d-flex align-items-end justify-content-center">
+                        <img src="img/best3.png" width="80px" height="80px" alt="">
+                    </div>
+                    <div class="cardDesc">
+                        <p><b>Memorable Ambience</b></p>
+                        <p class="text-start py-3">Beguiled and demoralized by all get charms pleasure the moments ever
+                            so blinded by desire.</p>
+                    </div>
+                    <div class="w-75 text-end">
+                        <button class="btn-main "> Read More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="testimonial text-center container-fluid container-lg py-3 py-md-5">
+        <p class="red ">Testimonial</p>
+        <h3>Review <span class="red">form our guests</span></h3>
+        <!-- Swiper Wrapper -->
+        <div class="slider-wrapper2 swiper">
+            <!-- Swiper Container -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <div class="card-item text-center">
+                        <div class="cardImg">
+                            <img src="img/Testimonial1.png" alt="">
+                        </div>
+                        <div class="cardDesc">
+                            <p>
+                                <b>Robert M. Dixon</b>
+                                <br>
+                                Also very good and so was the service. I had the mushroom risotto with scallops which
+                                was awesome. My wife had a burger over greens ...
+                            </p>
+                            <p class="text-end stars">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-regular fa-star"></i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card-item text-center">
+                        <div class="cardImg">
+                            <img src="img/Testimonial2.png" alt="">
+                        </div>
+                        <div class="cardDesc">
+                            <p>
+                                <b>Bernadette R. Martin</b>
+                                <br>
+                                Also very good and so was the service. I had the mushroom risotto with scallops which
+                                was awesome. My wife had a burger over greens ...
+                            </p>
+                            <p class="text-end stars">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-regular fa-star"></i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card-item text-center">
+                        <div class="cardImg">
+                            <img src="img/Testimonial3.png" alt="">
+                        </div>
+                        <div class="cardDesc">
+                            <p>
+                                <b>Regina D. Leonard</b>
+                                <br>
+                                Also very good and so was the service. I had the mushroom risotto with scallops which
+                                was awesome. My wife had a burger over greens ...
+                            </p>
+                            <p class="text-end stars">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-regular fa-star"></i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card-item text-center">
+                        <div class="cardImg">
+                            <img src="img/Testimonial2.png" alt="">
+                        </div>
+                        <div class="cardDesc">
+                            <p>
+                                <b>Robert M. Dixon</b>
+                                <br>
+                                Also very good and so was the service. I had the mushroom risotto with scallops which
+                                was awesome. My wife had a burger over greens ...
+                            </p>
+                            <p class="text-end stars">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-regular fa-star"></i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Pagination -->
+            <div class="swiper-pagination2"></div>
+        </div>
+
+    </section>
+
+    <section class="">
+        <h3 class="text-center py-3">Our Branch</h3>
+
+        <div class="container-fluid branch">
+            <div class="container-lg">
+                <div class="d-flex justify-content-between flex-column flex-md-row">
+                    <div class="text-center px-2">
+                        <h3>Robert Food</h3>
+                        <b>1986 Hilltop DriveBorger, TX 79007</b>
+                        <div class="d-flex justify-content-between">
+                            <p>
+                                <i class="fa-solid fa-clock"></i> 7.30 AM - 9.30 PM
+                            </p>
+                            <p><i class="fa-solid fa-phone"></i> +880 1630-225015</p>
+                        </div>
+                        <a href="https://maps.app.goo.gl/DvCQ8Ajrg6sqxT3f6">Click to View Google Map</a>
+                    </div>
+                    <div class="text-center px-2">
+                        <h3>Mark A. Reed Food</h3>
+                        <b>4877 Rose AvenueNew Orleans, LA 70112</b>
+                        <div class="d-flex justify-content-between">
+                            <p>
+                                <i class="fa-solid fa-clock"></i> 7.30 AM - 9.30 PM
+                            </p>
+                            <p><i class="fa-solid fa-phone"></i> +880 1630-225015</p>
+                        </div>
+                        <a href="https://maps.app.goo.gl/DvCQ8Ajrg6sqxT3f6">Click to View Google Map</a>
+                    </div>
+                    <div class="text-center px-2">
+                        <h3>Karie K. Hill Food</h3>
+                        <b>1509 Peaceful LaneCleveland, OH 44115</b>
+                        <div class="d-flex justify-content-between">
+                            <p>
+                                <i class="fa-solid fa-clock"></i> 7.30 AM - 9.30 PM
+                            </p>
+                            <p><i class="fa-solid fa-phone"></i> +880 1630-225015</p>
+                        </div>
+                        <a href="https://maps.app.goo.gl/DvCQ8Ajrg6sqxT3f6">Click to View Google Map</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>Copyright © 2022 | Shaheen Uddin Ahmad</p>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+
+        let show = document.getElementById("show");
+        let hide = document.getElementById("hide");
+        let mobileNav = document.getElementById("mobileNav");
+        show.addEventListener("click", () => {
+            mobileNav.style.display = "block"
+            hide.style.display = "block"
+            show.style.display = "none"
+        })
+        hide.addEventListener("click", () => {
+            mobileNav.style.display = "none"
+            show.style.display = "block"
+            hide.style.display = "none"
+        })
+
+
+
+
+        // Fitness Tool swipper
+        const swiper2 = new Swiper('.slider-wrapper2', {
+            loop: true,
+            grabCursor: true,
+            spaceBetween: 30,
+
+            // Pagination bullets
+            pagination: {
+                el: '.swiper-pagination2',
+                clickable: true,
+                dynamicBullets: true
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next2',
+                prevEl: '.swiper-button-prev2',
+            },
+
+            // Responsive breakpoints
+            breakpoints: {
+                0: {
+                    slidesPerView: 1
+                },
+                450: {
+                    slidesPerView: 2
+                },
+                768: {
+                    slidesPerView: 3
+                },
+                1024: {
+                    slidesPerView: 3
+                }
+            }
+        });
+    </script>
 </body>
 
 </html>
