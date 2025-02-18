@@ -57,7 +57,7 @@ nav .shopping-icon {
 .mobile-nav {
     z-index: 99999999999;
     background-color: #ffffff3f;
-    
+
 }
 
 .mobile-nav a {
@@ -76,13 +76,15 @@ nav .shopping-icon {
     border: none;
     border-radius: 10px;
     border: 2px solid var(--red);
-    transition: all 0.5s ;
+    transition: all 0.5s;
 }
-.btn-main:hover{
+
+.btn-main:hover {
     color: var(--red);
     border: 2px solid var(--red);
     background-color: transparent;
 }
+
 .red {
     color: var(--red) !important;
 }
@@ -194,9 +196,11 @@ ul {
     padding: 5px;
     border: none;
 }
-.specials .btn-main:hover i{
+
+.specials .btn-main:hover i {
     color: var(--red) !important;
 }
+
 .specials-dish {
     border-bottom: 2px dashed var(--red);
     padding: 0px;
@@ -446,6 +450,7 @@ footer p {
     color: #fff;
     text-align: center;
 }
+
 .highestImg2 {
     height: 350px;
 }
@@ -456,61 +461,70 @@ footer p {
 
 
 /* About page Css  */
-.about-hero{
+.about-hero {
     background-image: url(img/ABOUT-HERO.png);
     object-fit: cover;
     object-position: left;
     --bs-gutter-x: 0rem !important;
-    
+
 }
-.about-hero .dull{
+
+.about-hero .dull {
     background-color: #0000006e;
     padding: 100px 0px;
 }
 
-.about-hero h3 , .about-hero p{
+.about-hero h3,
+.about-hero p {
     color: #fff !important;
+}
 
-} 
-.about-text .data-row{
-    border:  2px solid var(--red);
-    border-radius: 10px ;
+.about-text .data-row {
+    border: 2px solid var(--red);
+    border-radius: 10px;
     padding: 30px;
-} 
-p{
+}
+
+p {
     font-size: 18px;
     margin-bottom: 0px !important;
 }
 
-.about-Chef{
+.about-Chef {
     background-color: #FFDFDF;
 }
-.about-service .swiper-wrapper{
+
+.about-service .swiper-wrapper {
     padding: 50px 0px;
-    
+
 }
-.about-service .swiper-wrapper .card-service{
+
+.about-service .swiper-wrapper .card-service {
     text-align: center;
-    padding:20px 40px ;
+    padding: 20px 40px;
     box-shadow: #cc333326 0px 4px 12px;
 }
-.swiper-pagination-clickable .swiper-pagination-bullet{
-    width: 20px ;
+
+.swiper-pagination-clickable .swiper-pagination-bullet {
+    width: 20px;
     height: 20px;
     border: 1px solid var(--red) !important;
     background-color: var(--red);
 }
-.about-team .row{
+
+.about-team .row {
     padding: 100px 0px 0px 0px;
 }
-.about-team .cardTeam{
+
+.about-team .cardTeam {
     border: 2px solid var(--red);
     border-radius: 100%;
     text-align: center;
-    height: 300px ;
+    height: 300px;
     width: 300px;
 }
-.about-team .cardTeam img{
+
+.about-team .cardTeam img {
     width: 200px;
     height: 200px;
     bottom: 80px;
@@ -521,21 +535,101 @@ p{
     object-fit: cover;
     object-position: center;
 }
-.about-team .cardTeam div{
+
+.about-team .cardTeam div {
     position: relative;
     bottom: 80px;
     padding: 0px 30px !important;
 }
-.about-team .team-Icon{
+
+.about-team .team-Icon {
     color: var(--red);
 }
+
+
+
+
+
+/* ITEMS PAGES  */
+.hero {
+    object-fit: cover;
+    object-position: left;
+    --bs-gutter-x: 0rem !important;
+
+}
+
+.hero .dull {
+    background-color: #0000006e;
+    padding: 100px 0px;
+}
+
+.hero h3,
+.hero p {
+    color: #fff !important;
+}
+
+.items-hero {
+    background-image: url(img/itemsHeader.png);
+}
+
+.items-search {
+    padding: 15px;
+    background-color: var(--red);
+    border-radius: 10px;
+}
+
+.items-search input {
+    width: 250px;
+    height: 50px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+input[value=Go] {
+    background-color: var(--red);
+    border: none;
+    height: 80px;
+    color: #fff;
+    width: 80px;
+    margin-left: 10px;
+    border-radius: 10px;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.items-list .card-items {
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    padding: 20px;
+    border-radius: 20PX;
+    align-items: center;
+    margin: 20px 0px;
+    justify-content: space-between;
+}
+
+.items-list .card-items h5 {
+    font-size: 20PX;
+    font-weight: 700;
+    line-height: 23PX;
+    margin-bottom: 0PX;
+}
+
+.items-list .card-items .img img {
+    width: 120px;
+    height: 120px;
+}
+.items-list img{
+    object-fit: cover;
+    object-position: center;
+    }
+
 @media screen and (min-width:991.9px) and (max-width:1200px) {
     .highestImg2 {
         height: 260px;
     }
 
     /* about page  */
-    .about-team .cardTeam img{
+    .about-team .cardTeam img {
         width: 190px;
         height: 190px;
     }
@@ -601,18 +695,20 @@ p{
 
 
     /* ABOUT PAGE  */
-    .about-team .cardTeam{
+    .about-team .cardTeam {
         width: 250px;
         height: 250px;
-    } 
+    }
+
     .about-team .cardTeam img {
         width: 99px;
         height: 100px;
         bottom: 50px;
         left: 60px;
     }
+
     .about-team .cardTeam div {
-        bottom:50px;
+        bottom: 50px;
         padding: 0px 20px !important;
     }
 
@@ -721,14 +817,16 @@ p{
 
 
     /* about page  */
-    
-    .about-text .data-row{
+
+    .about-text .data-row {
         padding: 15px 10px;
     }
+
     .about-team .row {
         padding: 0px;
     }
-    .teamCardP{
+
+    .teamCardP {
         width: 380px;
         display: flex;
         align-items: center;
@@ -736,20 +834,57 @@ p{
         flex-direction: column;
         margin-top: 20px;
         box-shadow: #cc333326 0px 4px 12px;
-        padding: 50px 0px 30px 0px;        
+        padding: 50px 0px 30px 0px;
         border-radius: 20px;
     }
+
     .about-team .cardTeam img {
         width: 100px;
         height: 100px;
         bottom: 35px;
         left: 65px;
     }
+
     .about-team .cardTeam div {
         bottom: 30px;
     }
+
+    /* items page  */
+    .items-search {
+        padding: 10px;
+    }
+
+    .items-search input{
+        max-width: 180px;
+        height: 40px;
+    }
+    input[value = Go] {
+        height: 60px;
+        width: 60px;
+    }
+    .items-list .card-items {
+        margin: 10px 0px;
+    }
+    .items-list .card-items img{
+        max-width: 100%;
+    }
+    .items-list .card-items .img img {
+        max-width: 120px;
+    }
+    .itemPic1{
+        height: 220px;
+    }
 }
 
+@media screen and (max-width:500px){
+    .items-list .card-items .img img {
+        max-width: 100px;
+        max-height: 100px;
+    }
+    .items-list .card-items h5{
+        font-size: 16px;
+    }
+}
 @media screen and (max-width:400px) {
     h3 {
         font-size: 18px !important;
@@ -814,7 +949,23 @@ p{
         width: 270px;
         height: 270px;
     }
+
     .teamCardP {
         width: 290px;
     }
+
+    /* items page  */
+    
+
+    .items-list .card-items .img img {
+        max-width: 80px;
+        max-height: 80px;
+    }
+    .items-list .card-items h5{
+        font-size: 14px;
+    }
+    .items-list .card-items p{
+        font-size: 12px;
+    }
+
 }

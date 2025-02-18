@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <!-- Css  -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Boostrap  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- font Awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+</head>
+
+<body>
+    <header class="">
+        <nav class="nav-red d-none d-md-block">
+            <div class="container-fluid container-lg d-flex justify-content-between">
+                <div class=" d-flex ">
+                    <div class="pe-5">
+                        <i class="fa-solid fa-clock"></i>
+                        7.30 AM - 9.30 PM
+
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-phone"></i>
+                        +880 1630 225 015
+                    </div>
+                </div>
+                <div class="">
+                    REGISTER
+                </div>
+            </div>
+
+        </nav>
+        <nav class="main container-fluid container-lg">
+            <div class="row py-1 px-1 px-lg-0 d-flex justify-content-between align-items-center">
+                <div class="col-4 col-md-2">
+                    <img src="img/logo.png" height="59px" alt="logo">
+                </div>
+                <div class="col-10 p-0 d-none d-md-block">
+                    <ul class="d-flex justify-content-between align-items-center p-0">
+                        <li>
+                            <a href="#">HOME</a>
+                        </li>
+                        <li>
+                            <a href="#">ABOUT</a>
+                        </li>
+                        <li>
+                            <a href="#">PAGES</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                        <li>
+                            <div class="shopping-icon"><i class="fa-solid fa-cart-shopping fa-xl"></i></div>
+                        </li>
+                        <li>
+                            <div class="d-flex align-items-center py-2">
+                                <p>
+                                    <b>Delivery Order</b>
+                                    <br>
+                                    +880 1630 225 015 &nbsp;
+                                </p>
+                                <img src="img/header-bike.png" height="35px" alt="">
+                            </div>
+                        </li>
+
+                        <li>
+                            <button class="btn-main">
+                                Login
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-2 text-end d-block d-md-none">
+                    <i class="fa-solid fa-bars fa-2xl" style="color: #cc3333;" id="show"></i>
+                    <i class="fa-solid fa-x fa-2xl" style="color: #cc3333;" id="hide"></i>
+                </div>
+            </div>
+            <div class="mobile-nav  text-start" id="mobileNav">
+                <div class="links d-flex flex-column">
+                    <a href="#" class="active">HOME</a>
+                    <a href="#Catagories">ABOUT</a>
+                    <a href="#Menu">PAGES</a>
+                    <a href="#Service">CONTACT</a>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="items-hero hero container-fluid text-center">
+        <div class="dull">
+            <h3>
+                ITEMS
+            </h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                <br>
+                sed do eius mod tempor incididunt ut labore et
+                dolore magna.
+            </p>
+        </div>
+    </section>
+
+    <section class="container-fluid container-lg py-3 py-md-5 text-center">
+        <h3>
+            It’s the food and groceries you Love, delivered
+        </h3>
+        <form class="d-flex align-items-center justify-content-center">
+            <div class="items-search">
+                <input type="search" placeholder="Search your Items" id="">
+            </div>
+            <input type="submit" value="Go">
+        </form>
+    </section>
+
+
+    <section class="container-fluid container-lg items-list py-3 py-md-3">
+
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <div class="col-12">
+                    <div class="card-items d-flex">
+                        <div class="data">
+                            <h5>Chicken Supreme Pizza</h5>
+                            <p>Topped with chicken, onion, capsicum, black olive & Green chilli</p>
+                            <h5>
+                                From $150
+                            </h5>
+                        </div>
+                        <div class="img"><img src="img/Chicken Supreme Pizza.png" alt=""></div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="card-items d-flex">
+                        <div class="data">
+                            <h5>Hamburger Burger with Beef</h5>
+                            <p>Topped with chicken, onion, capsicum, black olive & Green chilli</p>
+                            <h5>
+                                From $150
+                            </h5>
+                        </div>
+                        <div class="img"><img src="img/Hamburger Burger with Beef.png" alt=""></div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="card-items d-flex">
+                        <div class="data">
+                            <h5>Belgium waffles with strawberries</h5>
+                            <p>Topped with chicken, onion, capsicum, black olive & Green chilli</p>
+                            <h5>
+                                From $150
+                            </h5>
+                        </div>
+                        <div class="img"><img src="img/Belgium waffles with strawberries.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 my-4 text-center">
+                <img src="img/item1.png" width="100%" height="100%" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <div class="card-items d-flex">
+                    <div class="data">
+                        <h5>Chicken skewers</h5>
+                        <p>Topped with chicken, onion, capsicum, black olive & Green chilli</p>
+                        <h5>
+                            From $150
+                        </h5>
+                    </div>
+                    <div class="img"><img src="img/Chicken skewers.png" alt=""></div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="card-items d-flex">
+                    <div class="data">
+                        <h5>Mutton or lamb biriyani</h5>
+                        <p>Topped with chicken, onion, capsicum, black olive & Green chilli</p>
+                        <h5>
+                            From $150
+                        </h5>
+                    </div>
+                    <div class="img"><img src="img/Mutton or lamb biriyani.png" alt=""></div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="card-items d-flex">
+                    <div class="data">
+                        <h5>Delicious food on a white plate</h5>
+                        <p>Topped with chicken, onion, capsicum, black olive & Green chilli</p>
+                        <h5>
+                            From $150
+                        </h5>
+                    </div>
+                    <div class="img"><img src="img/Delicious food on a white plate.png" alt=""></div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="card-items d-flex">
+                    <div class="data">
+                        <h5>Spicy fried tubtim fish salad</h5>
+                        <p>Topped with chicken, onion, capsicum, black olive & Green chilli</p>
+                        <h5>
+                            From $150
+                        </h5>
+                    </div>
+                    <div class="img"><img src="img/Spicy fried tubtim fish salad.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+        <div class=" card-items p-0 ">
+            <img src="img/item2.png" class="itemPic1" width="100%" height="330px" alt="">
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <div class="card-items d-flex">
+                    <div class="data">
+                        <h5>Fresh cola drink with green lime</h5>
+                        <p>Topped with chicken, onion, capsicum, black olive & Green chilli</p>
+                        <h5>
+                            From $150
+                        </h5>
+                    </div>
+                    <div class="img"><img src="img/Fresh cola drink with green lime.png" alt=""></div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="card-items d-flex">
+                    <div class="data">
+                        <h5>Ice cream cone</h5>
+                        <p>Topped with chicken, onion, capsicum, black olive & Green chilli</p>
+                        <h5>
+                            From $150
+                        </h5>
+                    </div>
+                    <div class="img"><img src="img/Ice cream cone.png" alt=""></div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="card-items d-flex">
+                    <div class="data">
+                        <h5>Chocolate ice cream</h5>
+                        <p>Topped with chicken, onion, capsicum, black olive & Green chilli</p>
+                        <h5>
+                            From $150
+                        </h5>
+                    </div>
+                    <div class="img"><img src="img/Chocolate ice cream.png" alt=""></div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="card-items d-flex">
+                    <div class="data">
+                        <h5>Chocolate topping for ice cream cups</h5>
+                        <p>Topped with chicken, onion, capsicum, black olive & Green chilli</p>
+                        <h5>
+                            From $150
+                        </h5>
+                    </div>
+                    <div class="img"><img src="img/Chocolate topping for ice cream cups.png" alt=""></div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="card-items d-flex">
+                    <div class="data">
+                        <h5>Healthy breakfast</h5>
+                        <p>Topped with chicken, onion, capsicum, black olive & Green chilli</p>
+                        <h5>
+                            From $150
+                        </h5>
+                    </div>
+                    <div class="img"><img src="img/Healthy breakfast.png" alt=""></div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="card-items d-flex">
+                    <div class="data">
+                        <h5>Breakfast with coffee and fresh croissants</h5>
+                        <p>Topped with chicken, onion, capsicum, black olive & Green chilli</p>
+                        <h5>
+                            From $150
+                        </h5>
+                    </div>
+                    <div class="img"><img src="img/Breakfast with coffee and fresh croissants.png" alt=""></div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="card-items d-flex">
+                    <div class="data">
+                        <h5>Ried eggs, sausages, zucchini</h5>
+                        <p>Topped with chicken, onion, capsicum, black olive & Green chilli</p>
+                        <h5>
+                            From $150
+                        </h5>
+                    </div>
+                    <div class="img"><img src="img/Ried eggs, sausages, zucchini.png" alt=""></div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="card-items d-flex">
+                    <div class="data">
+                        <h5>Salad, fried eggs and pastry</h5>
+                        <p>Topped with chicken, onion, capsicum, black olive & Green chilli</p>
+                        <h5>
+                            From $150
+                        </h5>
+                    </div>
+                    <div class="img"><img src="img/Salad, fried eggs and pastry.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="">
+        <h3 class="text-center py-3">Our Branch</h3>
+
+        <div class="container-fluid branch">
+            <div class="container-lg">
+                <div class="d-flex justify-content-between flex-column flex-md-row">
+                    <div class="text-center px-2">
+                        <h3>Robert Food</h3>
+                        <b>1986 Hilltop DriveBorger, TX 79007</b>
+                        <div class="d-flex justify-content-between">
+                            <p>
+                                <i class="fa-solid fa-clock"></i> 7.30 AM - 9.30 PM
+                            </p>
+                            <p><i class="fa-solid fa-phone"></i> +880 1630-225015</p>
+                        </div>
+                        <a href="https://maps.app.goo.gl/DvCQ8Ajrg6sqxT3f6">Click to View Google Map</a>
+                    </div>
+                    <div class="text-center px-2">
+                        <h3>Mark A. Reed Food</h3>
+                        <b>4877 Rose AvenueNew Orleans, LA 70112</b>
+                        <div class="d-flex justify-content-between">
+                            <p>
+                                <i class="fa-solid fa-clock"></i> 7.30 AM - 9.30 PM
+                            </p>
+                            <p><i class="fa-solid fa-phone"></i> +880 1630-225015</p>
+                        </div>
+                        <a href="https://maps.app.goo.gl/DvCQ8Ajrg6sqxT3f6">Click to View Google Map</a>
+                    </div>
+                    <div class="text-center px-2">
+                        <h3>Karie K. Hill Food</h3>
+                        <b>1509 Peaceful LaneCleveland, OH 44115</b>
+                        <div class="d-flex justify-content-between">
+                            <p>
+                                <i class="fa-solid fa-clock"></i> 7.30 AM - 9.30 PM
+                            </p>
+                            <p><i class="fa-solid fa-phone"></i> +880 1630-225015</p>
+                        </div>
+                        <a href="https://maps.app.goo.gl/DvCQ8Ajrg6sqxT3f6">Click to View Google Map</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>Copyright © 2022 | Shaheen Uddin Ahmad</p>
+    </footer>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
