@@ -12,7 +12,29 @@ hide.addEventListener("click", () => {
     hide.style.display = "none"
 })
 
+let navPic = document.getElementById("navPic")
+let profileDetails = document.getElementById("profileDetails")
 
+navPic.addEventListener("click", () => {
+    if (profileDetails.style.display = "none") {
+        profileDetails.style.display = "flex"
+    } else {
+        profileDetails.style.display = "none"
+    }
+    
+
+})
+ 
+
+  document.addEventListener('click', function(event) {
+    let isClickInside = navPic.contains(event.target);
+    let isClickInside2 = profileDetails.contains(event.target);
+
+    if (!isClickInside && !isClickInside2) {
+      // Clicked outside the element, so close it
+      profileDetails.style.display = 'none'; // Or any other closing logic
+    }
+  });
 //  swipper
 const swiper2 = new Swiper('.slider-wrapper2', {
     loop: true,
@@ -57,13 +79,13 @@ const swiper = new Swiper('.slider-wrapper', {
     autoplay: {
         delay: 3000, // Time between slides in milliseconds
         disableOnInteraction: false, // Keep autoplay running after user interaction
-      },
+    },
     // Pagination bullets
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
         dynamicBullets: true
-        
+
     },
 
     // Navigation arrows
@@ -77,7 +99,7 @@ const swiper = new Swiper('.slider-wrapper', {
         0: {
             slidesPerView: 1
         },
-        
+
         600: {
             slidesPerView: 2
         }

@@ -8,6 +8,9 @@
     --secondColor: #2A435D;
     --red: #CC3333;
 }
+.bgc{
+    background-color:#fff8EE ;
+}
 
 .nav-red {
     background-color: var(--red);
@@ -48,7 +51,10 @@ nav .shopping-icon {
     position: relative;
     left: 30px;
 }
-
+#navPic{
+    cursor: pointer;
+    
+}
 .mobile-nav,
 #hide {
     display: none;
@@ -653,6 +659,139 @@ input[value=Go] {
     text-decoration: none;
 }
 
+/* profile Page  */
+.profile img{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    border: 2px solid var(--red);
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: 10px;
+}
+.profile h5{
+    font-size: 25px;
+    margin-bottom: 0px;
+}
+.profile .profileMenu h5{
+    padding: 10px;
+    margin: 10px 0px;
+    background-color: #fff8EE;
+    border-top: 1px solid var(--red);
+    border-bottom: 1px solid var(--red);
+    font-weight: 400 !important;
+}
+.profile .profileMenu .active{
+    border-left: 5px solid var(--red);
+    border-top: none;
+    border-bottom: none;
+}
+
+.profile h3{
+    border-bottom: 3px solid var(--red);
+    padding-bottom: 5px;
+}
+.profileForm input , .profileForm textarea{
+    background-color: #fff8EE;
+    padding: 10px 15px;
+    border-radius: 10px ;
+    border: 2px solid var(--red);
+    outline:none;
+}
+.profileForm label{
+    padding-top: 10px;
+}
+.profileDetails{
+    display: none;
+    position: absolute;
+    right: 70px;
+}
+.profileDetails .bgc{
+    z-index: 1111;
+}
+.profileDetails .h5{
+    border-bottom: 2px solid var(--red);
+    border-top: 2px solid var(--red);
+    padding: 5px 20px;
+    cursor: pointer;
+    
+}
+.profileDetails .bgc> h5{
+    border-bottom: 2px solid var(--red);
+    padding: 10px 20px;    
+    cursor: pointer;
+}
+
+
+/* My Cart  */
+.cart table tr:nth-child(1) {
+    background-color: var(--red);
+    color: #ffffff;
+}
+.cart table tr{
+    padding: 10px 0px;
+    display: grid;
+    grid-template-columns: 180px 1.2fr 1fr 1fr 1fr 0.5fr; /* Adjust the values as needed */
+    gap: 10px; /* Optional: Adds space between columns */
+    align-items: center;
+    border-bottom: 2px solid var(--red);
+    padding-right: 10px;
+}
+.cart table tr td{
+    font-size: 18px;
+    font-weight: 700;
+
+}
+.cart table tr .quantity span{
+    border: 1px solid var(--red);
+    width: 30px;
+    height: 30px;
+}
+.SHIPPING{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+}
+.CALCULATESHIPPING .inner {
+    width: 300px;
+    margin: auto;
+}
+.CALCULATESHIPPING .inner select , .CALCULATESHIPPING .inner input{
+    width: 100%;
+    padding: 10px 20px;
+    border: 2px solid var(--red);
+    border-radius: 10px;
+    margin: 5px 0px;
+    outline: none;
+}
+
+.CALCULATESHIPPING .inner select{
+    background-color: var(--red);
+    color: white;
+    border: none;
+}
+/* Change hover color to red */
+.CALCULATESHIPPING .inner select option:hover {
+    background-color: red !important;
+    color: white !important;
+}
+
+/* Change selected color to red */
+.CALCULATESHIPPING .inner select option:checked {
+    background-color: var(--red) !important;
+    color: white !important;
+}
+.CALCULATESHIPPING .inner input::placeholder{
+    color: var(--red);
+}
+.CARTSUBTOTAL .inner{
+    width: 350px;
+    margin: auto;
+} 
+.CARTSUBTOTAL .inner p{
+    border-bottom: 2px solid var(--red);
+    padding: 10px 0px 5px 0px;
+}
 
 @media screen and (min-width:991.9px) and (max-width:1200px) {
     .highestImg2 {
@@ -664,6 +803,7 @@ input[value=Go] {
         width: 190px;
         height: 190px;
     }
+    
 }
 
 @media screen and (min-width:768px) and (max-width:992px) {
@@ -743,7 +883,10 @@ input[value=Go] {
         padding: 0px 20px !important;
     }
 
-
+    /* My Cart page  */
+    .SHIPPING{
+        gap: 10px;
+    }
 
 
 }

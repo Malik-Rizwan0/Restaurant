@@ -86,7 +86,9 @@
                         </li>
 
                         <li>
-                            <img src="img/profile.png" width="59px" height="59px" id="navPic" class=" rounded-circle" alt="">
+                            <button class="btn-main">
+                                Login
+                            </button>
                         </li>
                     </ul>
                 </div>
@@ -104,102 +106,81 @@
 
                 </div>
             </div>
-            <div id="profileDetails" class="profileDetails  justify-content-end">
-                <div class="d-flex bgc flex-column ">
-                    <div class="d-flex py-3  h5">
-                        <img src="img/profile.png" width="59px" height="59px" class="rounded-circle" alt="">
-                        <div class="ps-3 pe-5">   
-                            <h5 class="m-0">David Matin</h5>
-                            <p>admin@gmail.com</p>
-                        </div>
-                    </div>
-                    
-                    <h5><i class="fa-solid fa-heart" style="color: #cc3333;"></i> &nbsp;  Wishlist</h5>
-                    <h5><i class="fa-solid fa-cart-shopping" style="color: #cc3333;"></i> &nbsp;  My Cart</h5>
-                    <h5><i class="fa-solid fa-power-off" style="color: #cc3333;"></i> &nbsp;  Logout</h5>
-                </div>
-            </div>
         </nav>
     </header>
 
-
-    <section class="container-fluid container-lg py-3 profile">
-        <div class="row">
-            <div class="col-4 d-none d-md-flex flex-column align-items-center">
-                <div class="bgc p-5 w-100 mb-4 text-center">
-                    <img src="img/profile.png" alt="">
-                    <h5>David Matin</h5>
-                    <p class="red">Web Developer</p>
-                </div>
-                <div class="profileMenu w-100">
-                    <h5 class="active">Profile</h5>
-                    <h5>My Cart</h5>
-                    <h5>Wishlist</h5>
-                    <h5>Shop</h5>
-                    <h5>Help Desk</h5>
-                    <h5>Logout</h5>
-                </div>
-            </div>
-            <div class="col-12 col-md-8 px-3 px-lg-5">
-                <form action="" class="profileForm">
-                    <div class="BASIC">
-                        <h3 class="red">BASIC INFORMATION</h3>
-                    </div>
-                    <div class="row red">
-                        <div class="col-12 d-flex flex-column">
-                            <label for="Fullname">User Full Name*</label>
-                            <input type="text" id="Fullname" value="David Matin">
-                        </div>
-                        <div class="col-6  d-flex flex-column">
-                            <label for="Professional">Professional title*</label>
-                            <input type="text" id="Professional" value="Web developer">
-                        </div>
-                        <div class="col-6  d-flex flex-column">
-                            <label for="Age">Age*</label>
-                            <input type="text" id="Age" value="38">
-                        </div>
-                        <div class="col-12 d-flex flex-column">
-                            <label for="About">About</label>
-                            <textarea id="ABOUT"
-                                rows="8">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with 
-
-"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</textarea>
-                        </div>
-                        <div class="BASIC pt-4">
-                            <h3 class="red">CONTACT INFORMATION</h3>
-                        </div>
-
-                        <div class="col-6  d-flex flex-column">
-                            <label for="CNumber">Contact Number</label>
-                            <input type="text" id="CNumber" value="+880 1630 2250 15">
-                        </div>
-                        <div class="col-6  d-flex flex-column">
-                            <label for="Email">Email Address</label>
-                            <input type="text" id="Email" value="shaheen.au2@gmail.com">
-                        </div>
-                        <div class="col-6  d-flex flex-column">
-                            <label for="Country">Country</label>
-                            <input type="text" id="Country" value="Country name">
-                        </div>
-                        <div class="col-6  d-flex flex-column">
-                            <label for="Postcode">Postcode</label>
-                            <input type="text" id="Postcode" value="112233">
-                        </div>
-                        <div class="col-6  d-flex flex-column">
-                            <label for="City">City</label>
-                            <input type="text" id="City" value="City Name">
-                        </div>
-                        <div class="col-6  d-flex flex-column">
-                            <label for="FAddress">Full Address</label>
-                            <input type="text" id="FAddress" value="Dhaka, Bnagladesh">
-                        </div>
-
-                        <button class="btn-main w-auto mx-auto my-4 py-3 px-5">Save Setting</button>
-                    </div>
-                </form>
-            </div>
+    <section class="items-hero hero container-fluid text-center">
+        <div class="dull">
+            <h3>
+                Wishlist
+            </h3>
+            
         </div>
     </section>
+    
+    <section class="container-fluid container-lg cart pb-5">
+        <table class="w-100">
+            <tr class="text-center">
+                <th>Product</th>
+                <th>Product Name</th>
+                <th>Unit Price</th>
+                <th>Quantity</th>
+                <th>Add to cart</th>
+                <th >Action</th>
+            </tr>
+            <tr class="text-center">
+                <td><img src="img/Belgium waffles with strawberries.png" width="150px" height="80px" alt=""></td>
+                <td>Belgium waffles with strawberries</td>
+                <td>$150</td>
+                <td class="d-flex justify-content-between quantity"><span>+</span>1<span>-</span></td>
+                <td><button class="btn-main">Add to cart</button></td>
+                <td><i class="fa-solid fa-xmark fa-xl" style="color: #ff3333;"></i></td>
+            </tr>
+            <tr class="text-center">
+                <td><img src="img/Chicken skewers.png" width="150px" height="80px" alt=""></td>
+                <td>Chicken skewers</td>
+                <td>$150</td>
+                <td class="d-flex justify-content-between quantity"><span>+</span>2<span>-</span></td>
+                <td><button class="btn-main">Add to cart</button></td>
+                <td><i class="fa-solid fa-xmark fa-xl" style="color: #ff3333;"></i></td>
+            </tr>
+            <tr class="text-center">
+                <td><img src="img/Belgium waffles with strawberries.png" width="150px" height="80px" alt=""></td>
+                <td>Belgium waffles with strawberries</td>
+                <td>$150</td>
+                <td class="d-flex justify-content-between quantity"><span>+</span>1<span>-</span></td>
+                <td><button class="btn-main">Add to cart</button></td>
+                <td><i class="fa-solid fa-xmark fa-xl" style="color: #ff3333;"></i></td>
+            </tr>
+            <tr class="text-center">
+                <td><img src="img/Chicken skewers.png" width="150px" height="80px" alt=""></td>
+                <td>Chicken skewers</td>
+                <td>$150</td>
+                <td class="d-flex justify-content-between quantity"><span>+</span>2<span>-</span></td>
+                <td><button class="btn-main">Add to cart</button></td>
+                <td><i class="fa-solid fa-xmark fa-xl" style="color: #ff3333;"></i></td>
+            </tr>
+            <tr class="text-center">
+                <td><img src="img/Belgium waffles with strawberries.png" width="150px" height="80px" alt=""></td>
+                <td>Belgium waffles with strawberries</td>
+                <td>$150</td>
+                <td class="d-flex justify-content-between quantity"><span>+</span>1<span>-</span></td>
+                <td><button class="btn-main">Add to cart</button></td>
+                <td><i class="fa-solid fa-xmark fa-xl" style="color: #ff3333;"></i></td>
+            </tr>
+            <tr class="text-center">
+                <td><img src="img/Chicken skewers.png" width="150px" height="80px" alt=""></td>
+                <td>Chicken skewers</td>
+                <td>$150</td>
+                <td class="d-flex justify-content-between quantity"><span>+</span>2<span>-</span></td>
+                <td><button class="btn-main">Add to cart</button></td>
+                <td><i class="fa-solid fa-xmark fa-xl" style="color: #ff3333;"></i></td>
+            </tr>
+        </table>
+    </section>
+
+
+  
 
     <section class="">
         <h3 class="text-center py-3">Our Branch</h3>
