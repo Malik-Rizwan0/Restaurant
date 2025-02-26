@@ -724,28 +724,37 @@ input[value=Go] {
 
 
 /* My Cart  */
-.cart table tr:nth-child(1) {
+.cart .table .tr:nth-child(1) {
     background-color: var(--red);
     color: #ffffff;
 }
-.cart table tr{
+.cart .table .tr{
+    width: 100wv;
     padding: 10px 0px;
     display: grid;
-    grid-template-columns: 180px 1.2fr 1fr 1fr 1fr 0.5fr; /* Adjust the values as needed */
-    gap: 10px; /* Optional: Adds space between columns */
+    grid-template-columns: 180px 1.2fr 1fr 1fr 1fr 0.5fr; 
+    gap: 10px; 
     align-items: center;
     border-bottom: 2px solid var(--red);
     padding-right: 10px;
 }
-.cart table tr td{
+.cart .table .tr .td{
     font-size: 18px;
     font-weight: 700;
 
 }
-.cart table tr .quantity span{
+.cart .table .tr .quantity span{
     border: 1px solid var(--red);
     width: 30px;
     height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px ;
+    font-weight: 700;
+}
+.cart .table .tr .td .red{
+    display: none;
 }
 .SHIPPING{
     display: grid;
@@ -1061,6 +1070,55 @@ input[value=Go] {
     .items-details img {
         max-width: 100%;
     }
+
+    /* My Cart  */
+.cart .table .tr:nth-child(1){
+    display: none;
+}
+
+    .cart .table .tr{
+        display: flex ;
+        align-items: center;
+        justify-content: space-between;
+        /* flex-wrap: wrap; */
+        flex-direction: column;
+        width: 100%;
+    }
+    .cart .table .tr .td{
+        width:100% !important;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .cart .table .tr .td img{
+        width: 100%;
+        min-width: 100%;
+        height: auto;
+    }
+    :nth-child(3) , .cart .table .tr .td:nth-child(4) , .cart .table .tr .td:nth-child(5) , .cart .table .tr .td:nth-child(6){
+        width: 50%;
+    }
+
+    .cart .table .tr .td .red{
+        display: flex;
+    }
+    .cart .table .tr .quantity span {
+        margin: 0px 10px;
+    }
+    .cart .table .tr .quantity .red{
+        margin: 0px ;
+        border: none;
+        font-size: 18px ;
+        width: auto;
+        height: auto;
+        font-weight: 700;
+    }
+    .SHIPPING {
+        /* display: flex; */
+        grid-template-columns: auto;
+        
+    }
+
 }
 
 @media screen and (max-width:500px) {
